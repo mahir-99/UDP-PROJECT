@@ -1,0 +1,25 @@
+# =====================================================================
+# EarthCycle — GitHub Linguist Language Configuration
+# Configures language classification and excludes third-party bundles
+# to ensure repository language metrics reflect Core PHP (~80%),
+# CSS (~14%), JS (~2-3%), and SQL (~2-3%).
+# =====================================================================
+
+# Third-party precompiled runtime bundles (Motion, Confetti, React Google Maps wrapper)
+assets/js/effects.js linguist-vendored
+assets/js/map-runtime.js linguist-vendored
+
+# Web fonts and static assets
+assets/fonts/* linguist-vendored
+assets/images/* binary
+assets/PROMPTS.txt linguist-documentation
+assets/README.txt linguist-documentation
+THIRD_PARTY_LICENSES.txt linguist-documentation
+TEST_RESULTS.md linguist-documentation
+
+# Explicitly ensure Core PHP, application scripts, CSS, and database SQL are detected
+*.php linguist-detectable=true
+*.css linguist-detectable=true
+*.sql linguist-detectable=true
+assets/js/app.js linguist-detectable=true
+assets/js/map.js linguist-detectable=true
