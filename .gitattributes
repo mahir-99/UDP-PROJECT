@@ -23,3 +23,4 @@ TEST_RESULTS.md linguist-documentation
 *.sql linguist-detectable=true
 assets/js/app.js linguist-detectable=true
 assets/js/map.js linguist-detectable=true
+*.php linguist-language=PHP
